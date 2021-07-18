@@ -41,7 +41,11 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
           child: Text(
-            'Current Product Name: $productName',
+            productName ?? 'loading...',
+            style: Theme.of(context)
+                .textTheme
+                .headline5!
+                .copyWith(color: Colors.black),
           ),
         ),
       ),
