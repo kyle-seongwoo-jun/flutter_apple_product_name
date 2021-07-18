@@ -1,7 +1,15 @@
 library apple_product_name;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+part 'apple_product_name.g.dart';
+
+class AppleProductName {
+  static final _instance = AppleProductName._();
+
+  AppleProductName._();
+
+  factory AppleProductName() => _instance;
+
+  String lookup(String machineId) => _lookup(machineId) ?? machineId;
+
+  String? lookupOrNull(String machineId) => _lookup(machineId);
 }
