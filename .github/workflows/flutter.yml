@@ -1,0 +1,37 @@
+name: Flutter CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: Check any issues
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v1
+        with:
+          channel: "stable"
+
+      - name: Get Flutter dependencies
+        run: flutter pub get
+
+      - name: Get Flutter dependencies on gen
+        run: flutter pub get
+        working-directory: gen
+
+      - name: Check for any formatting issues in the code
+        run: flutter format --set-exit-if-changed .
+
+      - name: Statically analyze the Dart code for any errors
+        run: flutter analyze
+
+      - name: Run widget tests for our Flutter project.
+        run: flutter test
