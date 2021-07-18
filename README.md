@@ -1,5 +1,7 @@
 # apple_product_name
 
+[![pub package](https://img.shields.io/pub/v/apple_product_name.svg)](https://pub.dev/packages/apple_product_name)
+
 Library for translation apple device identifier to product name (e.g. 'iPhone13,2' to 'iPhone 12')
 
 | iOS            | macOS            |
@@ -26,7 +28,7 @@ if (Platform.isIOS) {
 }
 ```
 
-You can use without device_info_plus package dependency.
+Also, you can use without device_info_plus package dependency.
 
 ```dart
 AppleProductName().lookup('iPad13,10')
