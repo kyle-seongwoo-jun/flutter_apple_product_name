@@ -8,7 +8,7 @@ void main() async {
 
   final urls = [
     // iPhone, iPod, iPad, Apple Watch
-    'https://raw.githubusercontent.com/fieldnotescommunities/ios-device-identifiers/c482f86f04e4d509e7ae06b07e82d3c8d3ff318c/ios-device-identifiers.json',
+    'https://raw.githubusercontent.com/fieldnotescommunities/ios-device-identifiers/master/ios-device-identifiers.json',
     // iMac, MacBook, MacBook Air, MacBook Pro, Mac mini, Mac Pro
     'https://raw.githubusercontent.com/kyle-seongwoo-jun/mac-device-identifiers/main/mac-device-identifiers-unique.json',
   ];
