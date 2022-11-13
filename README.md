@@ -4,7 +4,7 @@
 [![pub points](https://img.shields.io/pub/points/apple_product_name?color=2E8B57&label=pub%20points)](https://pub.dev/packages/apple_product_name/score)
 [![device_info_plus](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/actions/workflows/flutter.yml/badge.svg)](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/actions/workflows/flutter.yml)
 
-Library for translation apple device identifier to product name (e.g. 'iPhone13,2' to 'iPhone 12')
+Library for translating Apple machine identifiers into Apple product names (e.g. `iPhone15,2` to `iPhone 14 Pro`)
 
 | iOS            | macOS            |
 | -------------- | ---------------- |
@@ -18,15 +18,16 @@ You can use this package with [device_info_plus](https://pub.dev/packages/device
 
 ```dart
 import 'package:apple_product_name/apple_product_name.dart';
+import 'package:device_info_plus/device_info_plus.dart';
 
 if (Platform.isIOS) {
   final info = await DeviceInfoPlugin().iosInfo;
-  print(info.utsname.machine);      // "iPhone13,2"
-  print(info.utsname.productName);  // "iPhone 12"
+  print(info.utsname.machine);      // "iPhone15,2"
+  print(info.utsname.productName);  // "iPhone 14 Pro"
 } else if (Platform.isMacOS) {
   final info = await DeviceInfoPlugin().macOsInfo;
-  print(info.model);        // "iMac21,1"
-  print(info.productName);  // "iMac (24-inch, M1, 2021)"
+  print(info.model);        // "Mac14,2"
+  print(info.productName);  // "MacBook Air (M2, 2022)"
 }
 ```
 
