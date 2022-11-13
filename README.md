@@ -19,12 +19,12 @@ import 'package:apple_product_name/apple_product_name.dart';
 
 if (Platform.isIOS) {
   final info = await DeviceInfoPlugin().iosInfo;
-  info.utsname.machine     // "iPhone13,2"
-  info.utsname.productName // "iPhone 12"
+  print(info.utsname.machine);      // "iPhone13,2"
+  print(info.utsname.productName);  // "iPhone 12"
 } else if (Platform.isMacOS) {
   final info = await DeviceInfoPlugin().macOsInfo;
-  info.model       // "iMac21,1"
-  info.productName // "iMac (24-inch, M1, 2021)"
+  print(info.model);        // "iMac21,1"
+  print(info.productName);  // "iMac (24-inch, M1, 2021)"
 }
 ```
 
