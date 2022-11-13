@@ -1,3 +1,8 @@
+## 1.3.0
+
+- Add 2022 new models.
+- Works with device_info_plus 8.0.0.
+
 ## 1.2.0
 
 - Works with device_info_plus 4.0.0.
