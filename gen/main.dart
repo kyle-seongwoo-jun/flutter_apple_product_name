@@ -34,7 +34,7 @@ void main() async {
 
   final sourcePath = '../lib/apple_product_name.g.dart';
   await File(sourcePath).writeAsString(sb.toString());
-  await Process.run('flutter', ['format', sourcePath]);
+  await Process.run('dart', ['format', sourcePath]);
 
   print('Generated.');
 }
