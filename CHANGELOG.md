@@ -1,4 +1,11 @@
+## 2.0.0
+
+- Add 2023 new models in [#6](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/6), [#8](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/8)
+- Update Flutter dependencies, set Flutter >=3.3.0 and Dart to >=2.18.0 <4.0.0 in [#7](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/7)
+- Bump device_info_plus to 9.0.0 in [#9](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/9)
+
 ## 1.4.0
+
 - Add 2023 new models.
 
 ## 1.3.1
