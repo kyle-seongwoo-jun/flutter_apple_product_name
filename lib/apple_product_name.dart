@@ -25,15 +25,11 @@ class AppleProductName {
 /// Extension getters for [IosUtsname] to get the product name.
 extension IosProductName on IosUtsname {
   /// Returns the product name of the device.
-  String get productName {
-    if (machine == null) throw ArgumentError.notNull('machine');
-    return AppleProductName().lookup(machine!);
-  }
+  String get productName => AppleProductName().lookup(machine);
 
   /// Returns the product name of the device or `null` if the product name is not
   /// found.
-  String? get productNameOrNull =>
-      machine != null ? AppleProductName().lookupOrNull(machine!) : null;
+  String? get productNameOrNull => AppleProductName().lookupOrNull(machine);
 }
 
 /// Extension getters for [MacOsDeviceInfo] to get the product name.
