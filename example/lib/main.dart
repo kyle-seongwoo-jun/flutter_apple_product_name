@@ -8,28 +8,19 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  String? productName;
-
-  @override
-  void initState() {
-    super.initState();
+  Future<String> _loadProductName() async {
     if (Platform.isIOS) {
-      DeviceInfoPlugin().iosInfo.then((info) {
-        setState(() => productName = info.utsname.productName);
-      });
+      final info = await DeviceInfoPlugin().iosInfo;
+      return info.utsname.productName;
     } else if (Platform.isMacOS) {
-      DeviceInfoPlugin().macOsInfo.then((info) {
-        setState(() => productName = info.productName);
-      });
+      final info = await DeviceInfoPlugin().macOsInfo;
+      return info.productName;
     }
+    assert(false, 'Platform not supported');
+    return 'Unknown';
   }
 
   @override
@@ -39,14 +30,20 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Apple Product Name'),
         ),
-        body: Center(
-          child: Text(
-            productName ?? 'loading...',
-            style: Theme.of(context)
-                .textTheme
-                .headlineSmall!
-                .copyWith(color: Colors.black),
-          ),
+        body: FutureBuilder<String>(
+          future: _loadProductName(),
+          builder: (context, snapshot) {
+            final productName = snapshot.data ?? 'Loading...';
+            return Center(
+              child: Text(
+                productName,
+                style: Theme.of(context)
+                    .textTheme
+                    .headlineSmall!
+                    .copyWith(color: Colors.black),
+              ),
+            );
+          },
         ),
       ),
     );
