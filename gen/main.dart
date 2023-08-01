@@ -7,10 +7,14 @@ void main() async {
   print('Generating...');
 
   final urls = [
-    // iPhone, iPod, iPad, Apple Watch
-    'https://raw.githubusercontent.com/kyle-seongwoo-jun/ios-device-identifiers/master/ios-device-identifiers.json',
+    // iPhone, iPad, iPod
+    'https://raw.githubusercontent.com/kyle-seongwoo-jun/apple-device-identifiers/main/ios-device-identifiers.json',
+    // Apple Watch
+    'https://raw.githubusercontent.com/kyle-seongwoo-jun/apple-device-identifiers/main/watchos-device-identifiers.json',
+    // Apple TV
+    'https://raw.githubusercontent.com/kyle-seongwoo-jun/apple-device-identifiers/main/tvos-device-identifiers.json',
     // iMac, MacBook, MacBook Air, MacBook Pro, Mac mini, Mac Pro
-    'https://raw.githubusercontent.com/kyle-seongwoo-jun/mac-device-identifiers/main/mac-device-identifiers-unique.json',
+    'https://raw.githubusercontent.com/kyle-seongwoo-jun/apple-device-identifiers/main/mac-device-identifiers-unique.json',
   ];
 
   final responses =
