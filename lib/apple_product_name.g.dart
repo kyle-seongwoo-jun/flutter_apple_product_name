@@ -142,7 +142,6 @@ const _map = {
   "iPod5,1": "iPod touch (5th generation)",
   "iPod7,1": "iPod touch (6th generation)",
   "iPod9,1": "iPod touch (7th generation)",
-  "MacFamily20,1": "Mac",
   "Watch1,1": "Apple Watch (1st generation)",
   "Watch1,2": "Apple Watch (1st generation)",
   "Watch2,3": "Apple Watch Series 2",
