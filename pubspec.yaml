@@ -1,6 +1,6 @@
 name: apple_product_name
 description: Library for translating Apple machine identifiers into Apple product names (e.g. 'iPhone15,2' to 'iPhone 14 Pro')
-version: 2.0.0
+version: 2.1.0
 homepage: https://github.com/kyle-seongwoo-jun/flutter_apple_product_name
 
 environment:

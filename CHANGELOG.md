@@ -1,3 +1,7 @@
+## 2.1.0
+
+- Update name of iOS, iPadOS, iPod models in [#10](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/10)
+
 ## 2.0.0
 
 - Add 2023 new models in [#6](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/6), [#8](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/8)
