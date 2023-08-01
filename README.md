@@ -35,7 +35,7 @@ Also, you can use without device_info_plus package dependency.
 
 ```dart
 AppleProductName().lookup('iPad13,10')
-// iPad Pro 5th Gen (12.9 inch, WiFi+Cellular)
+// iPad Pro (12.9-inch) (5th generation)
 ```
 
 ## Source
