@@ -38,10 +38,9 @@ AppleProductName().lookup('iPad13,10')
 // iPad Pro 5th Gen (12.9 inch, WiFi+Cellular)
 ```
 
-## Sources
+## Source
 
-- iOS: [fieldnotescommunities/ios-device-identifiers](https://github.com/fieldnotescommunities/ios-device-identifiers)
-- macOS: [kyle-seongwoo-jun/mac-device-identifiers](https://github.com/kyle-seongwoo-jun/mac-device-identifiers)
+- [kyle-seongwoo-jun/apple-device-identifiers](https://github.com/kyle-seongwoo-jun/apple-device-identifiers)
 
 [ios image]: https://raw.githubusercontent.com/kyle-seongwoo-jun/flutter_apple_product_name/main/images/ios.png
 [macos image]: https://raw.githubusercontent.com/kyle-seongwoo-jun/flutter_apple_product_name/main/images/macos.png
