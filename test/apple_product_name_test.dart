@@ -5,7 +5,7 @@ void main() {
   test('lookup product name with machine id', () {
     expect(
       AppleProductName().lookup('x86_64'),
-      'iOS Simulator 64-bit',
+      'iPhone Simulator',
     );
     expect(
       AppleProductName().lookup('iPhone13,2'),
@@ -13,7 +13,7 @@ void main() {
     );
     expect(
       AppleProductName().lookup('iPad13,10'),
-      'iPad Pro 5th Gen (12.9 inch, WiFi+Cellular)',
+      'iPad Pro (12.9-inch) (5th generation)',
     );
     expect(
       AppleProductName().lookup('iMac21,1'),
