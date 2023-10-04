@@ -1,3 +1,7 @@
+## 2.2.0
+
+- Add iPhone 15 models, Apple Watch 9 models and Ultra 2 in [#12](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/12)
+
 ## 2.1.0
 
 - Update name of iOS, iPadOS, iPod models in [#10](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/10)
