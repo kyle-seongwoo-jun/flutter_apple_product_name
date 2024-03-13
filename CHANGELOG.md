@@ -1,3 +1,7 @@
+## 2.4.0
+
+- Add M3 MacBook Air models in [#17](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/17)
+
 ## 2.3.0
 
 - Add M3 Mac models in [#14](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/14)
