@@ -1,3 +1,11 @@
+## 3.0.0
+
+Plugin now requires the following:
+
+- Flutter >=3.19.0
+- Dart >=3.3.0
+- device_info_plus >=10.0.0
+
 ## 2.4.0
 
 - Add M3 MacBook Air models in [#17](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/17)
