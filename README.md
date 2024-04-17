@@ -1,8 +1,9 @@
 # apple_product_name
 
-[![pub package](https://img.shields.io/pub/v/apple_product_name.svg)](https://pub.dev/packages/apple_product_name)
+[![pub package](https://img.shields.io/pub/v/apple_product_name)](https://pub.dev/packages/apple_product_name)
 [![pub points](https://img.shields.io/pub/points/apple_product_name?color=2E8B57&label=pub%20points)](https://pub.dev/packages/apple_product_name/score)
-[![device_info_plus](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/actions/workflows/flutter.yml/badge.svg)](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/actions/workflows/flutter.yml)
+[![pub popularity](https://img.shields.io/pub/popularity/apple_product_name)](https://pub.dev/packages/apple_product_name/score)
+[![flutter ci](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/actions/workflows/flutter.yml/badge.svg)](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/actions/workflows/flutter.yml)
 
 Library for translating Apple machine identifiers into Apple product names (e.g. `iPhone15,2` to `iPhone 14 Pro`)
 
