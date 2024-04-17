@@ -32,7 +32,7 @@ if (Platform.isIOS) {
 }
 ```
 
-Also, you can use without device_info_plus package dependency.
+Or you can use `AppleProductName` class directly without `device_info_plus` package.
 
 ```dart
 AppleProductName().lookup('iPad13,10')
