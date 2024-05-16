@@ -1,3 +1,7 @@
+## 3.1.0
+
+- **feat**: add iPad Pro M4, iPad Air M2 models in [#20](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/20)
+
 ## 3.0.0
 
 > Plugin now requires the following:
@@ -6,7 +10,7 @@
 > - Dart >=3.3.0
 > - device_info_plus >=10.0.0
 
-- **breaking build**: update device_info_plus to 10.0.0 [#19](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/19)
+- **breaking build**: update device_info_plus to 10.0.0 in [#19](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/19)
 
 ## 2.4.0
 
