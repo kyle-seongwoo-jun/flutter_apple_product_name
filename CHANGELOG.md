@@ -1,3 +1,7 @@
+## 3.2.0
+
+- **feat**: add iPhone 16 models and Apple Watch Series 10 in [#23](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/23)
+
 ## 3.1.0
 
 - **feat**: add iPad Pro M4, iPad Air M2 models in [#20](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/20)
