@@ -1,3 +1,7 @@
+## 3.3.0
+
+- **chore**: update device_info_plus to 11.0.0
+
 ## 3.2.0
 
 - **feat**: add iPhone 16 models and Apple Watch Series 10 in [#23](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/23)
