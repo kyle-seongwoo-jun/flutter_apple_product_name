@@ -5,7 +5,7 @@
 [![pub popularity](https://img.shields.io/pub/popularity/apple_product_name)](https://pub.dev/packages/apple_product_name/score)
 [![flutter ci](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/actions/workflows/flutter.yml/badge.svg)](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/actions/workflows/flutter.yml)
 
-Library for translating Apple machine identifiers into Apple product names (e.g. `iPhone15,2` to `iPhone 14 Pro`)
+Library for translating Apple machine identifiers into Apple product names (e.g. `iPhone17,1` to `iPhone 16 Pro`)
 
 | iOS            | macOS            |
 | -------------- | ---------------- |
@@ -23,8 +23,8 @@ import 'package:device_info_plus/device_info_plus.dart';
 
 if (Platform.isIOS) {
   final info = await DeviceInfoPlugin().iosInfo;
-  print(info.utsname.machine);      // "iPhone15,2"
-  print(info.utsname.productName);  // "iPhone 14 Pro"
+  print(info.utsname.machine);      // "iPhone17,1"
+  print(info.utsname.productName);  // "iPhone 16 Pro"
 } else if (Platform.isMacOS) {
   final info = await DeviceInfoPlugin().macOsInfo;
   print(info.model);        // "Mac14,2"
@@ -35,8 +35,8 @@ if (Platform.isIOS) {
 Or you can use `AppleProductName` class directly without `device_info_plus` package.
 
 ```dart
-AppleProductName().lookup('iPad13,10')
-// iPad Pro (12.9-inch) (5th generation)
+AppleProductName().lookup('iPad16,5')
+// iPad Pro 13-inch (M4)
 ```
 
 ## Source
