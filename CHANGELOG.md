@@ -1,3 +1,7 @@
+## 3.4.0
+
+- **feat**: add iPad mini (A17 Pro) in [#27](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/27)
+
 ## 3.3.0
 
 - **chore**: update device_info_plus to 11.0.0
