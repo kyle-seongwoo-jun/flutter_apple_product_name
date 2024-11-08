@@ -1,3 +1,8 @@
+## 3.5.0
+
+- **feat**: add M4 iMac, Mac mini, MacBook Pro models in [#29](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/29)
+- **feat**: add Mac Studio models in [#29](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/29)
+
 ## 3.4.0
 
 - **feat**: add iPad mini (A17 Pro) in [#27](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/27)
