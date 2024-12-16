@@ -3,7 +3,7 @@ name: Run gen script
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 1' # Every Monday at 00:00 UTC
+    - cron: "0 0 * * 1" # Every Monday at 00:00 UTC
 
 jobs:
   gen:
@@ -16,22 +16,27 @@ jobs:
       - name: Install Dart
         uses: dart-lang/setup-dart@v1
 
-      - name: Get dependencies 
+      - name: Get dependencies
         run: dart pub get
         working-directory: gen
-      
+
       - name: Run gen/main.dart
         run: dart run main.dart
         working-directory: gen
 
-      - name: Get current date
-        id: date
+      - name: Generate commit message
+        id: commit-message
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MODEL: gpt-4o-mini
         run: |
-          echo "MONTH_YEAR=$(date +'%B %Y')" >> $GITHUB_OUTPUT
+          COMMIT_MSG=$(./scripts/commit-message.sh)
+          echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
+        if: ${{ steps.commit-message.outputs.COMMIT_MSG != '' }}
         with:
-          title: "feat: add identifiers for ${{ steps.date.outputs.MONTH_YEAR }} models"
-          commit-message: "feat: add identifiers for ${{ steps.date.outputs.MONTH_YEAR }} models"
+          title: ${{ steps.commit-message.outputs.COMMIT_MSG }}
+          commit-message: ${{ steps.commit-message.outputs.COMMIT_MSG }}
           branch: gen
