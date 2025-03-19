@@ -1,27 +1,14 @@
 name: Publish to pub.dev
 
 on:
+  workflow_dispatch:
   push:
-    branches: [main]
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+*"
 
-permissions:
-  contents: write
-  pull-requests: write
-
+# Publish using the reusable workflow from dart-lang.
 jobs:
-  release-please:
-    runs-on: ubuntu-latest
-    outputs:
-      release_created: ${{ steps.release.outputs.release_created }}
-    steps:
-      - uses: googleapis/release-please-action@v4
-        id: release
-        with:
-          release-type: dart
-
   publish:
-    needs: release-please
-    if: ${{ needs.release-please.outputs.release_created }}
     permissions:
       id-token: write # Required for authentication using OIDC
     uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
