@@ -1,5 +1,12 @@
 #
 
+## [3.6.0](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/compare/3.5.1...v3.6.0) (2025-03-19)
+
+
+### Features
+
+* add iPhone 16e, iPad Air (M3), iPad (A16), MacBook Air (M4), and Mac Studio (2025) ([43d5866](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/commit/43d5866d9978d70a8b364acf1701ba775ab2c4fe))
+
 ## 3.5.1
 
 - **fix**: fix wrong identifier of M4 Pro Mac mini ([#32](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/32))
