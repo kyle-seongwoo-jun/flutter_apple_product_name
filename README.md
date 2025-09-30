@@ -5,6 +5,12 @@
 [![pub downloads](https://badgen.net/pub/dm/apple_product_name)](https://pub.dev/packages/apple_product_name/score)
 [![flutter ci](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/actions/workflows/flutter.yml/badge.svg)](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/actions/workflows/flutter.yml)
 
+> [!WARNING]
+> This project is discontinued. We will no longer maintain it. (See [#42](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/issues/42))
+>
+> You can get the product name from [device_info_plus](https://pub.dev/packages/device_info_plus) package.
+> See [Migration Guide](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/issues/42#issuecomment-3353093846) for more details.
+
 Library for translating Apple machine identifiers into Apple product names (e.g. `iPhone17,1` to `iPhone 16 Pro`)
 
 | iOS            | macOS            |
