@@ -1,5 +1,12 @@
 #
 
+## [3.7.0](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/compare/v3.6.0...v3.7.0) (2025-09-30)
+
+
+### Features
+
+* mark productName and productNameOrNull as deprecated in IosProductName and MacOsProductName extensions ([607b632](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/commit/607b63278ab6356ed7c3ab73aa2d33b996756014))
+
 ## [3.6.0](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/compare/3.5.1...v3.6.0) (2025-03-19)
 
 * **feat**: add iPhone 16e, iPad Air (M3), iPad (A16), MacBook Air (M4), and Mac Studio (2025) ([#36](https://github.com/kyle-seongwoo-jun/flutter_apple_product_name/pull/36))
