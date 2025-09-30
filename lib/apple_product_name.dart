@@ -25,19 +25,23 @@ class AppleProductName {
 /// Extension getters for [IosUtsname] to get the product name.
 extension IosProductName on IosUtsname {
   /// Returns the product name of the device.
+  @Deprecated('Use IosDeviceInfo.modelName instead')
   String get productName => AppleProductName().lookup(machine);
 
   /// Returns the product name of the device or `null` if the product name is not
   /// found.
+  @Deprecated('Use IosDeviceInfo.modelName instead')
   String? get productNameOrNull => AppleProductName().lookupOrNull(machine);
 }
 
 /// Extension getters for [MacOsDeviceInfo] to get the product name.
 extension MacOsProductName on MacOsDeviceInfo {
   /// Returns the product name of the device.
+  @Deprecated('Use modelName instead')
   String get productName => AppleProductName().lookup(model);
 
   /// Returns the product name of the device or `null` if the product name is not
   /// found.
+  @Deprecated('Use modelName instead')
   String? get productNameOrNull => AppleProductName().lookupOrNull(model);
 }
